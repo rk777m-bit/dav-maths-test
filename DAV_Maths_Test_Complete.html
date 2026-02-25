@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="DAV Class 8 Mathematics - Chapter 15 Mensuration Online Test"/>
+<title>DAV Maths Test | Class 8 | Chapter 15: Mensuration</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* =============================================
+   DAV Class 8 Maths — Chapter 15: Mensuration
+   Complete Single-File Build | Developed by MRK
+   ============================================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#0B5ED7;--primary-dark:#0947B3;--primary-light:#E8F0FE;--primary-glow:rgba(11,94,215,.18);
+  --secondary:#fff;--accent:#FF6B35;--accent-dark:#E85520;--accent-light:#FFF0EB;
+  --success:#1CB87E;--success-light:#E8FAF3;--danger:#E53E3E;--danger-light:#FFF0F0;
+  --warning:#F6AD2B;--warning-light:#FFFBEB;--text-dark:#101828;--text-mid:#475467;--text-light:#98A2B3;
+  --bg:#F0F4FF;--bg2:#F8F9FF;--card:#fff;--border:#E4E7EC;
+  --shadow:0 1px 3px rgba(16,24,40,.08),0 4px 16px rgba(16,24,40,.06);
+  --shadow-md:0 4px 24px rgba(11,94,215,.10);--shadow-lg:0 8px 48px rgba(11,94,215,.18);
+  --shadow-xl:0 16px 64px rgba(11,94,215,.22);
+  --radius:20px;--radius-md:14px;--radius-sm:10px;--radius-xs:6px;
+  --transition:all .25s cubic-bezier(.4,0,.2,1);--header-h:72px
+}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text-dark);min-height:100vh;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.25}
+
+/* ── Header ── */
+.app-header{background:var(--primary);color:#fff;height:var(--header-h);display:flex;align-items:center;padding:0 24px;box-shadow:0 2px 16px rgba(11,94,215,.3);position:sticky;top:0;z-index:100;gap:16px}
+.header-logo{display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;text-decoration:none}
+.logo-icon{width:44px;height:44px;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;transition:var(--transition);flex-shrink:0}
+.logo-icon:hover{background:rgba(255,255,255,.25);transform:scale(1.05)}
+.logo-text{display:flex;flex-direction:column}
+.logo-title{font-family:'Poppins',sans-serif;font-weight:800;font-size:15px;color:#fff;line-height:1.2}
+.logo-sub{font-size:11px;color:rgba(255,255,255,.75)}
+.header-spacer{flex:1}
+.header-badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:600;color:#fff}
+.header-timer-wrap{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:6px 14px;font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;color:#fff;min-width:90px;justify-content:center;display:none}
+.header-timer-wrap.urgent{background:rgba(229,62,62,.3);border-color:var(--danger);animation:pulse-timer .8s infinite}
+@keyframes pulse-timer{0%,100%{opacity:1}50%{opacity:.6}}
+
+/* ── Pages ── */
+.page{display:none;min-height:calc(100vh - var(--header-h))}
+.page.active{display:block}
+
+/* ── Registration ── */
+.reg-hero{background:var(--primary);padding:60px 24px 80px;text-align:center;position:relative;overflow:hidden}
+.reg-hero::before{content:'';position:absolute;top:-60px;left:-60px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 70%);border-radius:50%}
+.reg-hero::after{content:'';position:absolute;bottom:-80px;right:-40px;width:250px;height:250px;background:radial-gradient(circle,rgba(255,107,53,.15) 0%,transparent 70%);border-radius:50%}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:30px;padding:6px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:20px}
+.hero-dot{width:8px;height:8px;background:#4ADE80;border-radius:50%;animation:dot-pulse 1.5s infinite}
+@keyframes dot-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.reg-hero h1{font-size:clamp(24px,5vw,38px);color:#fff;margin-bottom:12px}
+.reg-hero p{color:rgba(255,255,255,.8);font-size:16px;max-width:500px;margin:0 auto 24px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:5px 14px;font-size:13px;color:rgba(255,255,255,.85);font-weight:500}
+.chip.accent{background:var(--accent);border-color:var(--accent-dark);color:#fff}
+.reg-main{max-width:1100px;margin:-40px auto 40px;padding:0 20px;display:grid;grid-template-columns:1fr 340px;gap:24px;position:relative;z-index:10}
+@media(max-width:900px){.reg-main{grid-template-columns:1fr}}
+
+/* ── Cards ── */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card-header{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);padding:20px 24px;color:#fff}
+.card-header.secondary{background:linear-gradient(135deg,#1A1A2E 0%,#16213E 100%)}
+.card-header.accent-bg{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%)}
+.card-header h3{font-size:17px;font-weight:700;display:flex;align-items:center;gap:8px}
+.card-header p{font-size:13px;color:rgba(255,255,255,.75);margin-top:4px}
+.card-body{padding:24px}
+
+/* ── Form ── */
+.form-group{margin-bottom:20px}
+.form-label{display:block;font-weight:600;font-size:14px;margin-bottom:8px;color:var(--text-dark)}
+.form-label span{color:var(--danger)}
+.form-input{width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);font-family:'Nunito',sans-serif;font-size:15px;color:var(--text-dark);background:var(--card);transition:var(--transition);outline:none}
+.form-input:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-glow)}
+.form-input::placeholder{color:var(--text-light)}
+.form-input.error{border-color:var(--danger);box-shadow:0 0 0 4px rgba(229,62,62,.1)}
+.error-msg{color:var(--danger);font-size:12px;margin-top:4px;display:none}
+.error-msg.show{display:block}
+.info-row{display:flex;gap:12px;margin-bottom:20px}
+.info-box{flex:1;background:var(--primary-light);border:1px solid rgba(11,94,215,.15);border-radius:var(--radius-sm);padding:12px;text-align:center}
+.info-box .val{font-weight:800;font-size:20px;color:var(--primary);font-family:'Poppins',sans-serif}
+.info-box .lbl{font-size:12px;color:var(--text-mid);margin-top:2px}
+
+/* ── Buttons ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:var(--radius-sm);font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:var(--transition);text-decoration:none;white-space:nowrap}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 15px rgba(11,94,215,.35);width:100%}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(11,94,215,.45)}
+.btn-primary:active{transform:translateY(0)}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 4px 15px rgba(255,107,53,.35)}
+.btn-accent:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-danger:hover{opacity:.88}
+.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.btn-outline:hover{background:var(--primary-light)}
+.btn-sm{padding:8px 18px;font-size:13px}
+.btn-xs{padding:6px 12px;font-size:12px;border-radius:6px}
+.btn-success{background:var(--success);color:#fff;box-shadow:0 4px 15px rgba(28,184,126,.3)}
+.btn-success:hover{filter:brightness(1.08);transform:translateY(-1px)}
+
+/* ── Leaderboard ── */
+.lb-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--radius-sm);background:var(--bg);border:1px solid var(--border);animation:slideIn .3s ease}
+.lb-rank{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;flex-shrink:0}
+.lb-rank.gold{background:#FFD700;color:#7A5F00}
+.lb-rank.silver{background:#C0C0C0;color:#4A4A4A}
+.lb-rank.bronze{background:#CD7F32;color:#fff}
+.lb-rank.other{background:var(--primary-light);color:var(--primary)}
+.lb-name{flex:1;font-weight:600;font-size:14px;color:var(--text-dark);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb-score{font-weight:800;font-size:15px;font-family:'Poppins',sans-serif;color:var(--primary);white-space:nowrap}
+.lb-time{font-size:11px;color:var(--text-light);white-space:nowrap}
+.lb-scroll-container{overflow:hidden;position:relative;max-height:380px}
+.lb-scroll-inner{display:flex;flex-direction:column;gap:8px;animation:scrollUp 20s linear infinite}
+.lb-scroll-inner:hover{animation-play-state:paused}
+@keyframes scrollUp{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+
+/* ── Analytics ── */
+.analytics-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;text-align:center}
+.stat-card .num{font-size:24px;font-weight:800;font-family:'Poppins',sans-serif;color:var(--primary)}
+.stat-card .label{font-size:12px;color:var(--text-mid);margin-top:2px}
+
+/* ── Test Page ── */
+.test-topbar{background:var(--card);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:var(--header-h);z-index:90;box-shadow:var(--shadow);flex-wrap:wrap}
+.student-info{flex:1;min-width:120px}
+.student-name{font-weight:700;font-size:14px;color:var(--text-dark)}
+.student-id{font-size:12px;color:var(--text-light)}
+.progress-wrap{flex:2;min-width:180px}
+.progress-label{font-size:12px;font-weight:600;color:var(--text-mid);margin-bottom:4px;display:flex;justify-content:space-between}
+.progress-bar{height:8px;background:var(--border);border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--primary),#4F8EFF);border-radius:99px;transition:width .4s cubic-bezier(.4,0,.2,1);position:relative}
+.progress-fill::after{content:'';position:absolute;top:0;right:0;bottom:0;width:20px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4))}
+.test-main{max-width:860px;margin:0 auto;padding:24px 20px 100px}
+.section-divider{display:flex;align-items:center;gap:12px;margin:32px 0 20px}
+.section-tag{color:#fff;border-radius:8px;padding:6px 16px;font-family:'Poppins',sans-serif;font-weight:700;font-size:13px;white-space:nowrap}
+.source-tag{background:var(--primary)}
+.case-tag{background:#7C3AED}
+.ar-tag{background:#059669}
+.comp-tag{background:var(--accent)}
+.section-line{flex:1;height:2px;background:var(--border);border-radius:1px}
+.section-marks{font-size:12px;font-weight:600;color:var(--text-light);white-space:nowrap}
+.passage-card{background:var(--primary-light);border:1px solid rgba(11,94,215,.2);border-left:4px solid var(--primary);border-radius:var(--radius-sm);padding:16px 18px;margin-bottom:16px;font-size:14.5px;line-height:1.7;color:var(--text-dark)}
+.passage-card.case-passage{background:#F5F3FF;border-color:rgba(124,58,237,.2);border-left-color:#7C3AED}
+.q-card{background:var(--card);border-radius:var(--radius-md);box-shadow:var(--shadow);padding:20px;margin-bottom:16px;border:2px solid transparent;transition:var(--transition)}
+.q-card.answered{border-color:var(--success)}
+.q-card:hover{box-shadow:var(--shadow-md)}
+.q-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+.q-num{width:32px;height:32px;color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:700;font-size:13px;flex-shrink:0}
+.q-num.source-num{background:var(--primary)}
+.q-num.case-num{background:#7C3AED}
+.q-num.ar-num{background:#059669}
+.q-num.comp-num{background:var(--accent)}
+.q-marks{font-size:12px;color:var(--text-light);font-weight:600;margin-left:auto;white-space:nowrap;flex-shrink:0}
+.q-text{font-size:15px;font-weight:600;color:var(--text-dark);line-height:1.6;flex:1}
+.options-grid{display:flex;flex-direction:column;gap:10px}
+.option-btn{display:flex;align-items:center;gap:12px;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;background:var(--card);transition:var(--transition);text-align:left;width:100%}
+.option-btn:hover{border-color:var(--primary);background:var(--primary-light)}
+.option-btn.selected{border-color:var(--primary);background:var(--primary-light)}
+.option-btn.selected .opt-letter{background:var(--primary);color:#fff;border-color:var(--primary)}
+.opt-letter{width:28px;height:28px;border-radius:50%;background:var(--bg);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;transition:var(--transition)}
+.opt-text{font-size:14px;color:var(--text-dark);font-weight:500}
+.option-btn.correct{border-color:var(--success)!important;background:var(--success-light)!important}
+.option-btn.correct .opt-letter{background:var(--success);color:#fff;border-color:var(--success)}
+.option-btn.wrong{border-color:var(--danger)!important;background:var(--danger-light)!important}
+.option-btn.wrong .opt-letter{background:var(--danger);color:#fff;border-color:var(--danger)}
+.option-btn.disabled{pointer-events:none}
+.explanation-box{margin-top:12px;background:var(--warning-light);border:1px solid rgba(246,173,43,.3);border-radius:var(--radius-sm);padding:12px 14px;font-size:13.5px;color:var(--text-dark);line-height:1.6;display:none}
+.explanation-box.show{display:block}
+.explanation-box strong{color:#92570A}
+.submit-bar{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:2px solid var(--border);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:95;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
+.submit-bar .answered-count{font-size:14px;color:var(--text-mid);font-weight:600}
+.answered-count span{color:var(--primary);font-weight:800}
+.btn-submit{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;padding:12px 32px;border-radius:var(--radius-sm);font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;border:none;cursor:pointer;box-shadow:0 4px 15px rgba(255,107,53,.35);transition:var(--transition)}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,107,53,.45)}
+
+/* ── Result ── */
+.result-hero{background:linear-gradient(135deg,var(--primary) 0%,#1A56DB 100%);padding:48px 24px;text-align:center;color:#fff}
+.score-ring{width:160px;height:160px;margin:0 auto 24px;position:relative}
+.score-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.score-ring .track{fill:none;stroke:rgba(255,255,255,.2);stroke-width:12}
+.score-ring .fill{fill:none;stroke:#4ADE80;stroke-width:12;stroke-linecap:round;stroke-dasharray:440;stroke-dashoffset:440;transition:stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1)}
+.score-ring .fill.warning{stroke:var(--warning)}
+.score-ring .fill.danger{stroke:var(--danger)}
+.score-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.score-center .big{font-size:36px;font-weight:900;font-family:'Poppins',sans-serif;color:#fff;line-height:1}
+.score-center .small{font-size:14px;color:rgba(255,255,255,.75)}
+.result-hero h2{font-size:28px;margin-bottom:8px}
+.result-hero p{color:rgba(255,255,255,.8);font-size:16px}
+.result-main{max-width:860px;margin:-20px auto 40px;padding:0 20px}
+.result-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+@media(max-width:640px){.result-stats{grid-template-columns:1fr 1fr}}
+.rs-card{background:var(--card);border-radius:var(--radius-md);box-shadow:var(--shadow);padding:18px;text-align:center}
+.rs-card .num{font-size:26px;font-weight:900;font-family:'Poppins',sans-serif}
+.rs-card .lbl{font-size:12px;color:var(--text-mid);margin-top:4px;font-weight:600}
+.rs-card.green .num{color:var(--success)}
+.rs-card.red .num{color:var(--danger)}
+.rs-card.blue .num{color:var(--primary)}
+.rs-card.orange .num{color:var(--accent)}
+.result-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:20px 0}
+
+/* ── Certificate ── */
+.cert-wrap{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-xl);padding:40px;margin:24px 0;border:8px solid var(--primary-light);position:relative;overflow:hidden;text-align:center}
+.cert-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--primary),var(--accent),var(--primary))}
+.cert-wrap::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--primary),var(--accent),var(--primary))}
+.cert-school{font-size:13px;font-weight:600;color:var(--text-mid);text-transform:uppercase;letter-spacing:2px}
+.cert-title{font-size:30px;font-weight:900;font-family:'Poppins',sans-serif;color:var(--primary);margin:8px 0}
+.cert-body{font-size:15px;color:var(--text-mid);margin:4px 0}
+.cert-name{font-size:24px;font-weight:800;color:var(--text-dark);margin:12px 0;border-bottom:2px dashed var(--border);padding-bottom:12px}
+.cert-details{display:flex;justify-content:center;gap:40px;margin:16px 0;flex-wrap:wrap}
+.cert-detail .cd-val{font-size:20px;font-weight:800;font-family:'Poppins',sans-serif;color:var(--primary)}
+.cert-detail .cd-lbl{font-size:12px;color:var(--text-mid)}
+.cert-footer{font-size:12px;color:var(--text-light);margin-top:16px}
+.cert-seal{width:80px;height:80px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px auto 0;box-shadow:0 4px 20px rgba(11,94,215,.3)}
+
+/* ── Admin ── */
+.admin-hero{background:linear-gradient(135deg,#1A1A2E 0%,#16213E 100%);padding:40px 24px;color:#fff;text-align:center}
+.admin-hero h1{font-size:28px}
+.admin-hero p{color:rgba(255,255,255,.65);margin-top:6px}
+.admin-main{max-width:1200px;margin:24px auto;padding:0 20px}
+.admin-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px}
+@media(max-width:900px){.admin-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.admin-grid{grid-template-columns:1fr}}
+.adm-stat{background:var(--card);border-radius:var(--radius-md);padding:20px;box-shadow:var(--shadow);text-align:center;border-top:4px solid var(--primary)}
+.adm-stat .n{font-size:28px;font-weight:900;font-family:'Poppins',sans-serif;color:var(--primary)}
+.adm-stat .l{font-size:12px;color:var(--text-mid);margin-top:4px;font-weight:600}
+.adm-stat.orange{border-top-color:var(--accent)}.adm-stat.orange .n{color:var(--accent)}
+.adm-stat.green{border-top-color:var(--success)}.adm-stat.green .n{color:var(--success)}
+.adm-stat.red{border-top-color:var(--danger)}.adm-stat.red .n{color:var(--danger)}
+.adm-stat.purple{border-top-color:#7C3AED}.adm-stat.purple .n{color:#7C3AED}
+.sidebar-nav{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.nav-btn{padding:8px 20px;border-radius:20px;border:2px solid var(--primary);background:transparent;color:var(--primary);font-family:'Poppins',sans-serif;font-weight:700;font-size:14px;cursor:pointer;transition:var(--transition)}
+.nav-btn:hover,.nav-btn.active{background:var(--primary);color:#fff}
+.tab-section{display:none}
+.tab-section.active{display:block}
+.table-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.table-header{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid var(--border)}
+.table-header h3{font-size:16px;font-weight:700}
+.table-actions{display:flex;gap:10px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:700px}
+th,td{padding:12px 16px;text-align:left;font-size:13.5px}
+th{background:var(--bg);font-weight:700;color:var(--text-mid);font-size:12px;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid var(--border)}
+td{border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--bg)}
+.score-badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:20px;font-weight:700;font-size:13px}
+.score-badge.high{background:var(--success-light);color:var(--success)}
+.score-badge.mid{background:var(--warning-light);color:#92570A}
+.score-badge.low{background:var(--danger-light);color:var(--danger)}
+.delete-btn{background:var(--danger-light);color:var(--danger);border:none;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:600;transition:var(--transition)}
+.delete-btn:hover{background:var(--danger);color:#fff}
+.empty-state{text-align:center;padding:48px;color:var(--text-light)}
+.empty-state .big{font-size:48px;margin-bottom:12px}
+.empty-state p{font-size:16px}
+.section-score-row{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-radius:var(--radius-sm);background:var(--bg);border:1px solid var(--border);margin-bottom:8px}
+
+/* ── Modal / Overlay ── */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.overlay.show{display:flex}
+.modal{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-xl);padding:32px;max-width:420px;width:100%;animation:modalIn .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes modalIn{from{opacity:0;transform:scale(.8) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal h3{font-size:20px;margin-bottom:6px}
+.modal p{color:var(--text-mid);font-size:14px;margin-bottom:20px}
+
+/* ── Toast ── */
+.toast-container{position:fixed;top:90px;right:20px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast{background:var(--card);border-radius:var(--radius-sm);box-shadow:var(--shadow-lg);padding:12px 16px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:10px;min-width:260px;max-width:340px;border-left:4px solid var(--primary);animation:toastIn .3s cubic-bezier(.34,1.56,.64,1);pointer-events:all}
+.toast.success{border-left-color:var(--success)}
+.toast.error{border-left-color:var(--danger)}
+.toast.warning{border-left-color:var(--warning)}
+@keyframes toastIn{from{opacity:0;transform:translateX(100%)}to{opacity:1;transform:translateX(0)}}
+@keyframes toastOut{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(100%)}}
+
+/* ── Misc ── */
+.admin-login-hint{font-size:12px;color:var(--text-light);text-align:center;margin-top:8px}
+@keyframes slideIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.fade-in{animation:slideIn .4s ease}
+.review-section{margin-top:8px}
+.section-review-title{font-size:16px;font-weight:700;color:var(--text-dark);padding:16px 0 8px;display:flex;align-items:center;gap:8px}
+.adm-lb-item{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:var(--radius-sm);background:var(--bg);border:1px solid var(--border);margin-bottom:8px}
+
+@media(max-width:640px){
+  .app-header{padding:0 12px}
+  .logo-title{font-size:13px}
+  .logo-sub{display:none}
+  .header-badge{display:none}
+  .test-main{padding:16px 12px 100px}
+  .cert-details{gap:16px}
+  .cert-title{font-size:22px}
+  .submit-bar{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- ─── ADMIN LOGIN MODAL ─── -->
+<div class="overlay" id="admin-login-overlay">
+  <div class="modal">
+    <div style="text-align:center;margin-bottom:20px;font-size:48px">🔐</div>
+    <h3 style="text-align:center">Admin Access</h3>
+    <p style="text-align:center">Enter the admin password to continue.</p>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-input" id="admin-pass" placeholder="Enter admin password"/>
+    </div>
+    <button class="btn btn-primary" id="admin-login-btn">🔓 Login to Admin</button>
+    <p class="admin-login-hint">Click logo <strong>5 times</strong> to access Admin Panel</p>
+    <div style="text-align:center;margin-top:16px">
+      <button onclick="closeAdminModal()" style="background:none;border:none;color:var(--primary);cursor:pointer;font-size:13px;font-weight:600">← Back to Test</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── HEADER ─── -->
+<header class="app-header">
+  <div class="header-logo" id="logo-link" title="Click 5 times for Admin">
+    <div class="logo-icon">📐</div>
+    <div class="logo-text">
+      <div class="logo-title">DAV Maths Test</div>
+      <div class="logo-sub">Chapter 15: Mensuration</div>
+    </div>
+  </div>
+  <div class="header-spacer"></div>
+  <div class="header-badge" id="page-badge">Class 8 | 20 Marks</div>
+  <div class="header-timer-wrap" id="header-timer-wrap">
+    <span>⏱</span>
+    <span id="header-timer">20:00</span>
+  </div>
+</header>
+
+<!-- ═══════════════════════
+     PAGE 1: REGISTRATION
+═══════════════════════ -->
+<div class="page active" id="reg-page">
+  <div class="reg-hero">
+    <div class="hero-badge"><span class="hero-dot"></span> Live Test Active</div>
+    <h1>DAV Class 8 — Mathematics</h1>
+    <p>Chapter 15: Mensuration | Online Competency-Based Assessment</p>
+    <div class="hero-chips">
+      <span class="chip">⏱ 20 Minutes</span>
+      <span class="chip">📝 16 Questions</span>
+      <span class="chip accent">🎯 20 Marks</span>
+      <span class="chip">📊 Auto Evaluated</span>
+      <span class="chip">🏅 Certificate Included</span>
+    </div>
+  </div>
+
+  <div class="reg-main">
+    <!-- Left Column -->
+    <div style="display:flex;flex-direction:column;gap:20px">
+
+      <!-- Registration Card -->
+      <div class="card fade-in">
+        <div class="card-header">
+          <h3>🎓 Student Registration</h3>
+          <p>Enter your details to begin the test</p>
+        </div>
+        <div class="card-body">
+          <div class="info-row">
+            <div class="info-box"><div class="val">20</div><div class="lbl">Total Marks</div></div>
+            <div class="info-box"><div class="val">16</div><div class="lbl">Questions</div></div>
+            <div class="info-box"><div class="val">20</div><div class="lbl">Minutes</div></div>
+            <div class="info-box"><div class="val">4</div><div class="lbl">Sections</div></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-name">Full Name <span>*</span></label>
+            <input class="form-input" id="reg-name" type="text" placeholder="Enter your full name" autocomplete="name"/>
+            <div class="error-msg" id="name-err"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-email">Email ID <span>*</span></label>
+            <input class="form-input" id="reg-email" type="email" placeholder="Enter your email address" autocomplete="email"/>
+            <div class="error-msg" id="email-err"></div>
+          </div>
+          <div class="form-group" style="display:flex;align-items:center;gap:10px">
+            <input type="checkbox" id="sound-toggle" style="width:18px;height:18px;cursor:pointer"/>
+            <label for="sound-toggle" style="cursor:pointer;font-weight:600;font-size:14px;color:var(--text-mid)">🔊 Enable Sound Effects</label>
+          </div>
+          <div style="background:var(--accent-light);border:1px solid rgba(255,107,53,.2);border-radius:var(--radius-sm);padding:14px;margin-bottom:20px;font-size:13px">
+            <strong style="color:var(--accent)">📌 Instructions:</strong>
+            <ul style="list-style:disc;padding-left:18px;margin-top:8px;color:var(--text-mid);display:flex;flex-direction:column;gap:4px">
+              <li>Test has 4 sections with 16 questions worth 20 marks</li>
+              <li>Timer starts as soon as you click START TEST</li>
+              <li>Auto-submits when timer runs out (20 minutes)</li>
+              <li>Each email can only attempt the test once</li>
+              <li>Section A &amp; B: 1 mark each | Section C &amp; D: 2 marks each</li>
+            </ul>
+          </div>
+          <button class="btn btn-primary" id="btn-start" style="font-size:16px;padding:16px">🚀 START TEST</button>
+          <div style="text-align:center;margin-top:12px;font-size:12px;color:var(--text-light)">By starting, you agree to attempt the test honestly.</div>
+        </div>
+      </div>
+
+      <!-- Analytics Card -->
+      <div class="card fade-in">
+        <div class="card-header secondary">
+          <h3>📊 Live Analytics</h3>
+          <p>Real-time test statistics</p>
+        </div>
+        <div class="card-body">
+          <div class="analytics-grid">
+            <div class="stat-card"><div class="num" id="stat-visitors">0</div><div class="label">👁 Visitors</div></div>
+            <div class="stat-card"><div class="num" id="stat-participants">0</div><div class="label">🎓 Participants</div></div>
+            <div class="stat-card"><div class="num" id="stat-highest">0</div><div class="label">🏆 Highest</div></div>
+            <div class="stat-card"><div class="num" id="stat-avg">0</div><div class="label">📈 Avg Score</div></div>
+          </div>
+          <div class="stat-card" style="margin-top:12px"><div class="num" id="stat-completion">0%</div><div class="label">✅ Completion Rate</div></div>
+        </div>
+      </div>
+
+      <!-- Pattern Card -->
+      <div class="card fade-in">
+        <div class="card-header accent-bg">
+          <h3>📋 Question Paper Pattern</h3>
+          <p>DAV Board Competency-Based Design</p>
+        </div>
+        <div class="card-body" style="padding:0">
+          <table style="min-width:0">
+            <thead>
+              <tr>
+                <th>Section</th><th>Type</th><th>Questions</th><th>Marks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>A</td><td>Source-Based</td><td>6 (2×3)</td><td><strong>6</strong></td></tr>
+              <tr><td>B</td><td>Case-Based</td><td>6 (2×3)</td><td><strong>6</strong></td></tr>
+              <tr><td>C</td><td>Assertion &amp; Reasoning</td><td>2</td><td><strong>4</strong></td></tr>
+              <tr><td>D</td><td>Competency-Based</td><td>2</td><td><strong>4</strong></td></tr>
+            </tbody>
+            <tfoot>
+              <tr style="background:var(--primary-light)">
+                <td colspan="3" style="font-weight:700;color:var(--primary);padding:12px 16px">Total</td>
+                <td style="font-weight:900;font-size:18px;color:var(--primary);font-family:'Poppins',sans-serif;padding:12px 16px">20</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Leaderboard -->
+    <div>
+      <div class="card fade-in" style="position:sticky;top:calc(var(--header-h) + 12px)">
+        <div class="card-header secondary">
+          <h3>🏆 Leaderboard</h3>
+          <p>Top performers — auto-scrolling</p>
+        </div>
+        <div class="card-body" style="padding:16px">
+          <div class="lb-scroll-container">
+            <div class="lb-scroll-inner" id="lb-scroll-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background:var(--text-dark);color:rgba(255,255,255,.6);text-align:center;padding:20px;font-size:13px">
+    <div style="font-weight:700;color:#fff;margin-bottom:4px">DAV Class 8 Mathematics — Chapter 15: Mensuration</div>
+    <div>Developed by <strong style="color:var(--accent)">MRK</strong> | All Rights Reserved</div>
+  </footer>
+</div>
+
+<!-- ═══════════════
+     PAGE 2: TEST
+═══════════════ -->
+<div class="page" id="test-page">
+  <div class="test-topbar">
+    <div class="student-info">
+      <div class="student-name" id="test-student-name">Student Name</div>
+      <div class="student-id" id="test-student-id">ID: —</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progress</span><span id="progress-label">0/16 Answered</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    </div>
+  </div>
+  <div class="test-main">
+    <div style="background:var(--primary-light);border:1px solid rgba(11,94,215,.2);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:20px;font-size:14px;color:var(--primary)">
+      <strong>📌 General Instructions:</strong> All questions are compulsory. Read each question carefully. Section A &amp; B carry 1 mark each. Section C &amp; D carry 2 marks each. No negative marking.
+    </div>
+    <div id="questions-container"></div>
+  </div>
+  <div class="submit-bar">
+    <div class="answered-count" id="answered-count"><span>0</span>/16 questions answered</div>
+    <button class="btn-submit" onclick="submitTest(false)">📤 Submit Test</button>
+  </div>
+</div>
+
+<!-- ══════════════════
+     PAGE 3: RESULT
+══════════════════ -->
+<div class="page" id="result-page">
+  <div class="result-hero">
+    <div class="score-ring">
+      <svg viewBox="0 0 150 150">
+        <circle class="track" cx="75" cy="75" r="70"/>
+        <circle class="fill" id="score-ring-fill" cx="75" cy="75" r="70" stroke-dashoffset="440"/>
+      </svg>
+      <div class="score-center" id="score-center-text">
+        <div class="big">—</div><div class="small">out of 20</div>
+      </div>
+    </div>
+    <h2>Your Result: <span id="score-grade" style="color:#4ADE80">—</span></h2>
+    <p id="result-message">Calculating...</p>
+    <div style="margin-top:12px;color:rgba(255,255,255,.7);font-size:14px">Student: <strong id="res-name-display" style="color:#fff">—</strong></div>
+  </div>
+  <div class="result-main">
+    <div class="result-stats">
+      <div class="rs-card blue"><div class="num" id="res-score">—</div><div class="lbl">📊 Score</div></div>
+      <div class="rs-card green"><div class="num" id="res-correct">—</div><div class="lbl">✅ Correct</div></div>
+      <div class="rs-card red"><div class="num" id="res-wrong">—</div><div class="lbl">❌ Wrong</div></div>
+      <div class="rs-card orange"><div class="num" id="res-skipped">—</div><div class="lbl">⏭ Skipped</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+      <div class="rs-card blue"><div class="num" id="res-pct" style="font-size:22px">—</div><div class="lbl">📈 Percentage</div></div>
+      <div class="rs-card orange"><div class="num" id="res-time" style="font-size:18px">—</div><div class="lbl">⏱ Time Taken</div></div>
+    </div>
+    <div class="result-actions">
+      <button class="btn btn-primary" style="width:auto" onclick="printCertificate()">🖨 Download Certificate</button>
+      <button class="btn btn-success" onclick="downloadResult()">⬇ Download Result</button>
+    </div>
+    <div class="cert-wrap fade-in" id="cert-print">
+      <div id="certificate">Generating certificate...</div>
+    </div>
+    <div class="review-section">
+      <div style="font-size:20px;font-weight:800;font-family:'Poppins',sans-serif;margin-bottom:16px;display:flex;align-items:center;gap:10px">
+        📖 Detailed Answer Review
+        <div style="flex:1;height:2px;background:var(--border);border-radius:1px"></div>
+      </div>
+      <div id="review-container"></div>
+    </div>
+    <div style="text-align:center;padding:32px 0 16px;color:var(--text-light);font-size:13px">
+      <strong>Developed by MRK</strong> | DAV Class 8 Maths — Chapter 15: Mensuration
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════
+     PAGE 4: ADMIN
+══════════════════ -->
+<div class="page" id="admin-page">
+  <div class="admin-hero">
+    <h1>🖥️ Admin Control Panel</h1>
+    <p>DAV Class 8 Mathematics — Chapter 15: Mensuration | Manage Test Data</p>
+  </div>
+  <div class="admin-main">
+    <div class="admin-grid">
+      <div class="adm-stat"><div class="n" id="adm-visitors">0</div><div class="l">👁 Visitors</div></div>
+      <div class="adm-stat orange"><div class="n" id="adm-participants">0</div><div class="l">🎓 Participants</div></div>
+      <div class="adm-stat green"><div class="n" id="adm-highest">0</div><div class="l">🏆 Highest</div></div>
+      <div class="adm-stat red"><div class="n" id="adm-avg">0</div><div class="l">📊 Average</div></div>
+      <div class="adm-stat purple"><div class="n" id="adm-completion">0%</div><div class="l">✅ Completion</div></div>
+    </div>
+    <div class="sidebar-nav">
+      <button class="nav-btn active" onclick="switchTab('tab-students',this)">👨‍🎓 All Students</button>
+      <button class="nav-btn" onclick="switchTab('tab-leaderboard',this)">🏆 Leaderboard</button>
+      <button class="nav-btn" onclick="switchTab('tab-analysis',this)">📊 Analysis</button>
+      <button class="nav-btn" onclick="switchTab('tab-settings',this)">⚙️ Settings</button>
+    </div>
+
+    <!-- Students Tab -->
+    <div class="tab-section active" id="tab-students">
+      <div class="table-card">
+        <div class="table-header">
+          <h3>👨‍🎓 Student Records</h3>
+          <div class="table-actions">
+            <button class="btn btn-success btn-sm" onclick="exportToExcel()">📥 Export CSV</button>
+            <button class="btn btn-outline btn-sm" onclick="loadAdminDashboard()">🔄 Refresh</button>
+          </div>
+        </div>
+        <div style="padding:12px 20px;border-bottom:1px solid var(--border)">
+          <input class="form-input" id="search-input" placeholder="🔍 Search by name or email..." style="max-width:400px;padding:10px 14px" oninput="filterTable(this.value)"/>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>#</th><th>Name</th><th>Email</th><th>Score</th><th>Time</th><th>Date</th><th>Action</th></tr>
+            </thead>
+            <tbody id="admin-table-body">
+              <tr><td colspan="7"><div class="empty-state"><div class="big">⏳</div><p>Loading...</p></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaderboard Tab -->
+    <div class="tab-section" id="tab-leaderboard">
+      <div class="card">
+        <div class="card-header secondary"><h3>🏆 Full Leaderboard</h3><p>All participants ranked by score</p></div>
+        <div class="card-body" id="admin-lb-container"><div class="empty-state"><div class="big">🏆</div><p>No data yet.</p></div></div>
+      </div>
+    </div>
+
+    <!-- Analysis Tab -->
+    <div class="tab-section" id="tab-analysis">
+      <div class="card">
+        <div class="card-header" style="background:linear-gradient(135deg,#7C3AED,#5B21B6)"><h3>📊 Score Distribution</h3><p>Performance breakdown across all participants</p></div>
+        <div class="card-body" id="section-analysis-container"><div class="empty-state"><div class="big">📊</div><p>No data yet.</p></div></div>
+      </div>
+    </div>
+
+    <!-- Settings Tab -->
+    <div class="tab-section" id="tab-settings">
+      <div class="card">
+        <div class="card-header accent-bg"><h3>⚙️ Admin Settings</h3><p>Manage test data and system controls</p></div>
+        <div class="card-body" style="display:grid;gap:16px">
+          <div style="background:var(--bg);border-radius:var(--radius-sm);padding:16px">
+            <div style="font-weight:700;margin-bottom:8px">📥 Export All Data</div>
+            <div style="font-size:13px;color:var(--text-mid);margin-bottom:12px">Download all student records as CSV file.</div>
+            <button class="btn btn-success btn-sm" onclick="exportToExcel()">📥 Export to CSV</button>
+          </div>
+          <div style="background:var(--warning-light);border:1px solid rgba(246,173,43,.3);border-radius:var(--radius-sm);padding:16px">
+            <div style="font-weight:700;margin-bottom:8px;color:#92570A">🔄 Reset Leaderboard</div>
+            <div style="font-size:13px;color:var(--text-mid);margin-bottom:12px">⚠️ Permanently deletes ALL student records.</div>
+            <button class="btn btn-danger btn-sm" onclick="resetLeaderboard()">🗑 Reset Leaderboard</button>
+          </div>
+          <div style="background:var(--danger-light);border:1px solid rgba(229,62,62,.2);border-radius:var(--radius-sm);padding:16px">
+            <div style="font-weight:700;margin-bottom:8px;color:var(--danger)">⚠️ Reset Analytics</div>
+            <div style="font-size:13px;color:var(--text-mid);margin-bottom:12px">Resets visitor counts and analytics data.</div>
+            <button class="btn btn-danger btn-sm" onclick="resetAnalytics()">🗑 Reset Analytics</button>
+          </div>
+          <div style="background:var(--primary-light);border:1px solid rgba(11,94,215,.2);border-radius:var(--radius-sm);padding:16px">
+            <div style="font-weight:700;margin-bottom:8px">🔑 Admin Credentials</div>
+            <div style="font-size:13px;color:var(--text-mid)">Password: <code style="background:var(--border);padding:2px 8px;border-radius:4px;font-family:monospace">mrk@admin123</code></div>
+            <div style="font-size:13px;color:var(--text-mid);margin-top:4px">Access: Click logo 5 times rapidly on the homepage.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:32px 0;color:var(--text-light);font-size:13px;border-top:1px solid var(--border);margin-top:24px">
+      <strong>Developed by MRK</strong> | DAV Class 8 Mathematics — Chapter 15: Mensuration
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+// ─── CONSTANTS ───
+const TOTAL_TIME = 20 * 60;
+const ADMIN_PASSWORD = "mrk@admin123";
+const DB_KEY = "dav_maths_ch15";
+
+// ─── QUESTIONS DATABASE ───
+const QUESTIONS = [
+  // SECTION A — SOURCE-BASED (6 × 1M)
+  {id:1,section:"A",type:"source",marks:1,passageId:"s1",
+   passage:`<strong>📌 Source 1 — Read the following and answer the questions below:</strong><br><br>Priya's school has a rectangular playground that is <strong>45 m long</strong> and <strong>30 m wide</strong>. Inside the playground, there is a circular garden with a <strong>radius of 7 m</strong>. The school authority wants to lay grass on the remaining area (excluding the circular garden). The cost of laying grass is <strong>₹15 per m²</strong>. <em>(Use π = 22/7)</em>`,
+   question:"What is the area of the rectangular playground?",
+   options:["1350 m²","1250 m²","1450 m²","1500 m²"],answer:0,
+   explanation:"Area of rectangle = length × breadth = 45 × 30 = <strong>1350 m²</strong>"},
+
+  {id:2,section:"A",type:"source",marks:1,passageId:"s1",
+   question:"What is the area of the circular garden? (Use π = 22/7)",
+   options:["144 m²","154 m²","164 m²","174 m²"],answer:1,
+   explanation:"Area of circle = πr² = (22/7) × 7 × 7 = 22 × 7 = <strong>154 m²</strong>"},
+
+  {id:3,section:"A",type:"source",marks:1,passageId:"s1",
+   question:"What is the total cost of laying grass on the remaining area?",
+   options:["₹17,940","₹18,000","₹17,640","₹18,480"],answer:0,
+   explanation:"Remaining area = 1350 − 154 = 1196 m². Cost = 1196 × 15 = <strong>₹17,940</strong>"},
+
+  {id:4,section:"A",type:"source",marks:1,passageId:"s2",
+   passage:`<strong>📌 Source 2 — Read the following and answer the questions below:</strong><br><br>A wooden storage box in the shape of a <strong>cuboid</strong> has dimensions: <strong>Length = 50 cm, Breadth = 30 cm, Height = 20 cm.</strong> A craftsman needs to polish all outer surfaces at a cost of <strong>₹2 per cm²</strong>. He also needs to calculate the volume to check storage capacity.`,
+   question:"What is the total surface area of the cuboid storage box?",
+   options:["6200 cm²","6000 cm²","6400 cm²","5800 cm²"],answer:0,
+   explanation:"TSA = 2(lb + bh + lh) = 2(50×30 + 30×20 + 50×20) = 2(1500+600+1000) = 2 × 3100 = <strong>6200 cm²</strong>"},
+
+  {id:5,section:"A",type:"source",marks:1,passageId:"s2",
+   question:"What is the volume of the storage box?",
+   options:["30,000 cm³","25,000 cm³","35,000 cm³","40,000 cm³"],answer:0,
+   explanation:"Volume = l × b × h = 50 × 30 × 20 = <strong>30,000 cm³</strong>"},
+
+  {id:6,section:"A",type:"source",marks:1,passageId:"s2",
+   question:"What is the total cost of polishing all outer surfaces of the box?",
+   options:["₹12,000","₹12,400","₹11,600","₹13,200"],answer:1,
+   explanation:"Cost = TSA × Rate = 6200 × 2 = <strong>₹12,400</strong>"},
+
+  // SECTION B — CASE-BASED (6 × 1M)
+  {id:7,section:"B",type:"case",marks:1,passageId:"c1",
+   passage:`<strong>📌 Case Study 1:</strong> A farmer owns a <strong>trapezoidal field</strong>. The two parallel sides of the field are <strong>120 m and 80 m</strong>, with a <strong>perpendicular height of 60 m</strong> between them. He plans to grow <strong>wheat in half the field</strong> at a cultivation cost of <strong>₹5 per m²</strong> and <strong>vegetables in the other half</strong> at <strong>₹8 per m²</strong>.`,
+   question:"What is the total area of the trapezoidal field?",
+   options:["6000 m²","5000 m²","7200 m²","4800 m²"],answer:0,
+   explanation:"Area of trapezium = ½ × (sum of parallel sides) × height = ½ × (120+80) × 60 = ½ × 200 × 60 = <strong>6000 m²</strong>"},
+
+  {id:8,section:"B",type:"case",marks:1,passageId:"c1",
+   question:"What is the cost of cultivating the wheat portion of the field?",
+   options:["₹15,000","₹14,000","₹18,000","₹12,000"],answer:0,
+   explanation:"Wheat area = 6000 ÷ 2 = 3000 m². Cost = 3000 × ₹5 = <strong>₹15,000</strong>"},
+
+  {id:9,section:"B",type:"case",marks:1,passageId:"c1",
+   question:"What is the total cost of cultivating the entire field?",
+   options:["₹39,000","₹35,000","₹45,000","₹33,000"],answer:0,
+   explanation:"Wheat = ₹15,000. Vegetable = 3000 × ₹8 = ₹24,000. Total = ₹15,000 + ₹24,000 = <strong>₹39,000</strong>"},
+
+  {id:10,section:"B",type:"case",marks:1,passageId:"c2",
+   passage:`<strong>📌 Case Study 2:</strong> Rahul is renovating his room which measures <strong>8 m × 6 m × 3 m</strong> (L×B×H). He wants to paint the four walls and the ceiling. The room has <strong>one door (2 m × 1.2 m)</strong> and <strong>two windows (each 1.5 m × 1 m)</strong>. Paint costs <strong>₹50 per m²</strong>. He also wants to tile the floor at <strong>₹80 per m²</strong>.`,
+   question:"What is the total area of the four walls of the room?",
+   options:["84 m²","80 m²","90 m²","96 m²"],answer:0,
+   explanation:"Area of 4 walls = 2(l+b) × h = 2(8+6) × 3 = 2 × 14 × 3 = <strong>84 m²</strong>"},
+
+  {id:11,section:"B",type:"case",marks:1,passageId:"c2",
+   question:"What is the net paintable area (walls + ceiling − door − windows)?",
+   options:["126.6 m²","124.0 m²","128.4 m²","130.8 m²"],answer:0,
+   explanation:"Ceiling = 8×6 = 48 m². Total = 84+48 = 132 m². Door = 2×1.2 = 2.4 m². Windows = 2×1.5 = 3 m². Net = 132−2.4−3 = <strong>126.6 m²</strong>"},
+
+  {id:12,section:"B",type:"case",marks:1,passageId:"c2",
+   question:"What is the total cost of tiling the floor of Rahul's room?",
+   options:["₹3,840","₹3,200","₹4,000","₹4,800"],answer:0,
+   explanation:"Floor area = 8 × 6 = 48 m². Tiling cost = 48 × ₹80 = <strong>₹3,840</strong>"},
+
+  // SECTION C — ASSERTION & REASONING (2 × 2M)
+  {id:13,section:"C",type:"assertion",marks:2,
+   question:`<div style="margin-bottom:12px;padding:12px;background:var(--primary-light);border-radius:8px"><strong>Assertion (A):</strong> If the side of a square is doubled, its area becomes 4 times the original area.</div><div style="padding:12px;background:#F0FDF4;border-radius:8px"><strong>Reason (R):</strong> The area of a square = (side)². If the side becomes 2s, then new area = (2s)² = 4s².</div>`,
+   options:["Both A and R are true, and R is the correct explanation of A.","Both A and R are true, but R is NOT the correct explanation of A.","A is true but R is false.","A is false but R is true."],
+   answer:0,
+   explanation:"Original area = s². New area (side doubled) = (2s)² = 4s² = 4 times original. R correctly and completely explains A. Hence <strong>option (a)</strong> is correct."},
+
+  {id:14,section:"C",type:"assertion",marks:2,
+   question:`<div style="margin-bottom:12px;padding:12px;background:var(--primary-light);border-radius:8px"><strong>Assertion (A):</strong> The lateral surface area of a cube with side 5 cm is 100 cm².</div><div style="padding:12px;background:#F0FDF4;border-radius:8px"><strong>Reason (R):</strong> The lateral surface area of a cube = 4 × (side)².</div>`,
+   options:["Both A and R are true, and R is the correct explanation of A.","Both A and R are true, but R is NOT the correct explanation of A.","A is true but R is false.","A is false but R is true."],
+   answer:0,
+   explanation:"LSA = 4 × (5)² = 4 × 25 = 100 cm². Both A and R are correct and R correctly explains A. Hence <strong>option (a)</strong> is correct."},
+
+  // SECTION D — COMPETENCY-BASED (2 × 2M)
+  {id:15,section:"D",type:"competency",marks:2,
+   question:"A swimming pool has a <strong>trapezoidal cross-section</strong> with parallel sides <strong>25 m and 15 m</strong>, and perpendicular height <strong>10 m</strong>. The pool extends <strong>2 m in depth</strong> (uniform width). How many litres of water can the pool hold? <em>(1 m³ = 1000 litres)</em>",
+   options:["4,00,000 litres","3,00,000 litres","2,00,000 litres","5,00,000 litres"],answer:0,
+   explanation:"Area of cross-section = ½ × (25+15) × 10 = ½ × 40 × 10 = 200 m². Volume = 200 × 2 = 400 m³. Capacity = 400 × 1000 = <strong>4,00,000 litres</strong>"},
+
+  {id:16,section:"D",type:"competency",marks:2,
+   question:"Riya wants to wrap a <strong>cube-shaped gift box</strong> with edge <strong>12 cm</strong> using decorative paper costing <strong>₹3 per cm²</strong>. She wastes <strong>10% of paper</strong> during wrapping. What is the <strong>total amount she will spend</strong>?",
+   options:["₹2,851.20","₹2,592.00","₹2,200.00","₹3,110.40"],answer:0,
+   explanation:"TSA of cube = 6 × 12² = 6 × 144 = 864 cm². With 10% waste: 864 × 1.10 = 950.4 cm². Cost = 950.4 × ₹3 = <strong>₹2,851.20</strong>"}
+];
+
+// ─── STATE ───
+let ST = {
+  student:null, answers:{}, timeLeft:TOTAL_TIME,
+  timerInterval:null, testSubmitted:false,
+  logoClicks:0, logoTimer:null, adminAuthed:false
+};
+let audioEnabled = false;
+
+// ─── DB ───
+function getDB(){try{return JSON.parse(localStorage.getItem(DB_KEY)||'{"results":[],"analytics":{"visitors":0}}')}catch{return{results:[],analytics:{visitors:0}}}}
+function saveDB(db){localStorage.setItem(DB_KEY,JSON.stringify(db))}
+function checkDupe(email){return(getDB().results||[]).some(r=>r.email.toLowerCase()===email.toLowerCase())}
+function incVisitors(){const db=getDB();db.analytics=db.analytics||{};db.analytics.visitors=(db.analytics.visitors||0)+1;saveDB(db)}
+function saveResult(r){const db=getDB();db.results=db.results||[];db.results.push(r);saveDB(db)}
+
+// ─── UTILS ───
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function $id(id){return document.getElementById(id)}
+function set(id,v){const e=$id(id);if(e)e.textContent=v}
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const p=$id(id);if(p)p.classList.add('active');
+  window.scrollTo(0,0);
+  const isTest=id==='test-page';
+  const tw=$id('header-timer-wrap');
+  const pb=$id('page-badge');
+  if(tw)tw.style.display=isTest?'flex':'none';
+  if(pb)pb.style.display=isTest?'none':'inline-flex';
+}
+
+// ─── SOUND ───
+function playSound(type){
+  if(!audioEnabled)return;
+  try{
+    const ctx=new(window.AudioContext||window.webkitAudioContext)();
+    const o=ctx.createOscillator(),g=ctx.createGain();
+    o.connect(g);g.connect(ctx.destination);
+    const c={click:{f:440,d:.08},correct:{f:600,d:.2},wrong:{f:220,d:.25},submit:{f:523,d:.4},tick:{f:800,d:.05}};
+    const cfg=c[type]||c.click;
+    o.frequency.value=cfg.f;
+    g.gain.setValueAtTime(.12,ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+cfg.d);
+    o.start();o.stop(ctx.currentTime+cfg.d);
+  }catch{}
+}
+
+// ─── TOAST ───
+function toast(msg,type='info',dur=3000){
+  const tc=$id('toast-container');if(!tc)return;
+  const t=document.createElement('div');
+  t.className=`toast ${type}`;
+  t.innerHTML=`<span>${{info:'ℹ️',success:'✅',error:'❌',warning:'⚠️'}[type]||'ℹ️'}</span><span>${msg}</span>`;
+  tc.appendChild(t);
+  setTimeout(()=>{t.style.animation='toastOut .3s ease forwards';setTimeout(()=>t.remove(),300)},dur);
+}
+
+// ─── ANALYTICS ───
+function updateAnalytics(){
+  const db=getDB(), R=db.results||[], A=db.analytics||{};
+  set('stat-visitors',A.visitors||0);
+  set('stat-participants',R.length);
+  set('stat-highest',R.length?Math.max(...R.map(r=>r.score)):0);
+  set('stat-avg',R.length?(R.reduce((s,r)=>s+r.score,0)/R.length).toFixed(1):'0');
+  const comp=R.filter(r=>r.completed).length;
+  set('stat-completion',R.length?Math.round(comp/R.length*100)+'%':'0%');
+}
+
+// ─── LEADERBOARD ───
+function renderLB(){
+  const el=$id('lb-scroll-inner');if(!el)return;
+  const R=(getDB().results||[]).sort((a,b)=>b.score-a.score).slice(0,20);
+  if(!R.length){el.innerHTML='<div class="empty-state"><div class="big">🏆</div><p>No entries yet. Be the first!</p></div>';return}
+  const medals=['🥇','🥈','🥉'],rc=['gold','silver','bronze'];
+  const items=R.map((r,i)=>`
+    <div class="lb-item fade-in">
+      <div class="lb-rank ${rc[i]||'other'}">${medals[i]||i+1}</div>
+      <div class="lb-name">${esc(r.name)}</div>
+      <div class="lb-time">${r.timeTaken||''}</div>
+      <div class="lb-score">${r.score}/${r.total}</div>
+    </div>`).join('');
+  el.innerHTML=items+items;
+  el.style.animationDuration=Math.max(10,R.length*2.5)+'s';
+}
+
+// ─── INIT ───
+document.addEventListener('DOMContentLoaded',()=>{
+  incVisitors();updateAnalytics();renderLB();
+
+  // Sound toggle
+  const st=$id('sound-toggle');
+  if(st)st.addEventListener('change',()=>{audioEnabled=st.checked});
+
+  // Logo → admin (5 clicks)
+  const logo=$id('logo-link');
+  if(logo){
+    logo.addEventListener('click',()=>{
+      ST.logoClicks++;
+      clearTimeout(ST.logoTimer);
+      ST.logoTimer=setTimeout(()=>{ST.logoClicks=0},2000);
+      if(ST.logoClicks>=5){ST.logoClicks=0;openAdminModal()}
+    });
+  }
+
+  // Start button
+  const startBtn=$id('btn-start');
+  if(startBtn)startBtn.addEventListener('click',handleStart);
+
+  // Admin login
+  const aBtn=$id('admin-login-btn');
+  const aPass=$id('admin-pass');
+  if(aBtn)aBtn.addEventListener('click',doAdminLogin);
+  if(aPass)aPass.addEventListener('keydown',e=>{if(e.key==='Enter')doAdminLogin()});
+});
+
+function handleStart(){
+  const name=($id('reg-name')?.value||'').trim();
+  const email=($id('reg-email')?.value||'').trim();
+  let ok=true;
+  const ne=$id('name-err'),ee=$id('email-err');
+  const ni=$id('reg-name'),ei=$id('reg-email');
+  // Name
+  if(!name){ni.classList.add('error');ne.textContent='Full Name is required.';ne.classList.add('show');ok=false}
+  else{ni.classList.remove('error');ne.classList.remove('show')}
+  // Email
+  const rx=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!email){ei.classList.add('error');ee.textContent='Email ID is required.';ee.classList.add('show');ok=false}
+  else if(!rx.test(email)){ei.classList.add('error');ee.textContent='Please enter a valid email.';ee.classList.add('show');ok=false}
+  else if(checkDupe(email)){ei.classList.add('error');ee.textContent='This email has already appeared in the test.';ee.classList.add('show');ok=false}
+  else{ei.classList.remove('error');ee.classList.remove('show')}
+  if(!ok)return;
+  ST.student={name,email,userId:'DAV'+Date.now().toString(36).toUpperCase(),timestamp:new Date().toLocaleString('en-IN'),startTime:Date.now()};
+  toast(`Welcome, ${name}! Starting test...`,'success');
+  playSound('submit');
+  setTimeout(startTest,800);
+}
+
+// ─── ADMIN MODAL ───
+function openAdminModal(){$id('admin-login-overlay').classList.add('show')}
+function closeAdminModal(){$id('admin-login-overlay').classList.remove('show')}
+function doAdminLogin(){
+  const pass=$id('admin-pass');
+  if(pass?.value===ADMIN_PASSWORD){
+    ST.adminAuthed=true;
+    closeAdminModal();
+    toast('Admin access granted!','success');
+    loadAdminDashboard();
+    showPage('admin-page');
+  }else{
+    toast('Incorrect password!','error');
+    pass?.classList.add('error');
+    setTimeout(()=>pass?.classList.remove('error'),1500);
+  }
+}
+
+// ─── START TEST ───
+function startTest(){
+  ST.answers={};ST.timeLeft=TOTAL_TIME;ST.testSubmitted=false;
+  renderTest();showPage('test-page');startTimer();updateProgress();
+}
+
+// ─── RENDER TEST ───
+function renderTest(){
+  set('test-student-name',ST.student.name);
+  set('test-student-id',ST.student.userId);
+  const container=$id('questions-container');if(!container)return;
+  const sections=[
+    {key:'A',label:'Section A — Source-Based Questions',tag:'source-tag',marks:'(1 Mark Each | 6 Questions = 6 Marks)'},
+    {key:'B',label:'Section B — Case-Based Questions',tag:'case-tag',marks:'(1 Mark Each | 6 Questions = 6 Marks)'},
+    {key:'C',label:'Section C — Assertion & Reasoning',tag:'ar-tag',marks:'(2 Marks Each | 2 Questions = 4 Marks)'},
+    {key:'D',label:'Section D — Competency-Based Application',tag:'comp-tag',marks:'(2 Marks Each | 2 Questions = 4 Marks)'},
+  ];
+  let html='',pRendered=new Set(),qNum=0;
+  sections.forEach(sec=>{
+    const sQs=QUESTIONS.filter(q=>q.section===sec.key);if(!sQs.length)return;
+    html+=`<div class="section-divider">
+      <div class="section-tag ${sec.tag}">${sec.label}</div>
+      <div class="section-line"></div>
+      <div class="section-marks">${sec.marks}</div>
+    </div>`;
+    sQs.forEach(q=>{
+      qNum++;
+      if(q.passageId&&!pRendered.has(q.passageId)){
+        pRendered.add(q.passageId);
+        const pc=q.type==='case'?'case-passage':'';
+        html+=`<div class="passage-card ${pc}">${q.passage}</div>`;
+      }
+      const nc=q.type==='case'?'case-num':q.type==='assertion'?'ar-num':q.type==='competency'?'comp-num':'source-num';
+      html+=`<div class="q-card fade-in" id="qcard-${q.id}">
+        <div class="q-header">
+          <div class="q-num ${nc}">Q${qNum}</div>
+          <div class="q-text">${q.question}</div>
+          <div class="q-marks">[${q.marks} Mark${q.marks>1?'s':''}]</div>
+        </div>
+        <div class="options-grid" id="opts-${q.id}">
+          ${q.options.map((opt,i)=>`
+            <button class="option-btn" onclick="selectAnswer(${q.id},${i})" id="opt-${q.id}-${i}">
+              <div class="opt-letter">${'ABCD'[i]}</div>
+              <div class="opt-text">${opt}</div>
+            </button>`).join('')}
+        </div>
+        <div class="explanation-box" id="exp-${q.id}"><strong>📖 Explanation: </strong>${q.explanation}</div>
+      </div>`;
+    });
+  });
+  container.innerHTML=html;
+}
+
+// ─── SELECT ANSWER ───
+function selectAnswer(qId,optIdx){
+  if(ST.testSubmitted)return;
+  playSound('click');
+  ST.answers[qId]=optIdx;
+  QUESTIONS.find(q=>q.id===qId)?.options.forEach((_,i)=>{
+    const b=$id(`opt-${qId}-${i}`);
+    if(b)b.classList.toggle('selected',i===optIdx);
+  });
+  const card=$id(`qcard-${qId}`);
+  if(card)card.classList.add('answered');
+  updateProgress();
+}
+
+// ─── PROGRESS ───
+function updateProgress(){
+  const total=QUESTIONS.length,answered=Object.keys(ST.answers).length;
+  const pct=Math.round(answered/total*100);
+  const fill=$id('progress-fill');
+  const lbl=$id('progress-label');
+  const cnt=$id('answered-count');
+  if(fill)fill.style.width=pct+'%';
+  if(lbl)lbl.textContent=`${answered}/${total} Answered`;
+  if(cnt)cnt.innerHTML=`<span>${answered}</span>/${total} questions answered`;
+}
+
+// ─── TIMER ───
+function startTimer(){
+  updateTimerDisplay();
+  ST.timerInterval=setInterval(()=>{
+    ST.timeLeft--;updateTimerDisplay();
+    if(ST.timeLeft<=0){clearInterval(ST.timerInterval);autoSubmit()}
+  },1000);
+}
+function updateTimerDisplay(){
+  const m=Math.floor(ST.timeLeft/60),s=ST.timeLeft%60;
+  const str=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  const el=$id('header-timer');if(el)el.textContent=str;
+  const wrap=$id('header-timer-wrap');
+  if(wrap)wrap.classList.toggle('urgent',ST.timeLeft<=120);
+  if(ST.timeLeft<=120&&ST.timeLeft%10===0)playSound('tick');
+}
+function autoSubmit(){toast('⏰ Time Up! Auto-submitting...','warning',4000);setTimeout(()=>submitTest(true),1500)}
+
+// ─── SUBMIT ───
+function submitTest(auto=false){
+  if(ST.testSubmitted)return;
+  const unanswered=QUESTIONS.length-Object.keys(ST.answers).length;
+  if(!auto&&unanswered>0&&!confirm(`You have ${unanswered} unanswered question(s). Submit anyway?`))return;
+  clearInterval(ST.timerInterval);ST.testSubmitted=true;
+  const tSecs=TOTAL_TIME-ST.timeLeft;
+  const timeTaken=`${Math.floor(tSecs/60)}m ${tSecs%60}s`;
+  let score=0;
+  QUESTIONS.forEach(q=>{if(ST.answers[q.id]===q.answer)score+=q.marks});
+  const total=QUESTIONS.reduce((s,q)=>s+q.marks,0);
+  const correct=QUESTIONS.filter(q=>ST.answers[q.id]===q.answer).length;
+  const wrong=QUESTIONS.filter(q=>ST.answers[q.id]!==undefined&&ST.answers[q.id]!==q.answer).length;
+  const skipped=QUESTIONS.filter(q=>ST.answers[q.id]===undefined).length;
+  const result={name:ST.student.name,email:ST.student.email,userId:ST.student.userId,timestamp:ST.student.timestamp,score,total,correct,wrong,skipped,timeTaken,percentage:Math.round(score/total*100),completed:!auto,answers:ST.answers};
+  saveResult(result);playSound('submit');showResults(result);
+}
+
+// ─── RESULTS ───
+function showResults(result){
+  showPage('result-page');
+  const pct=result.percentage;
+  const fill=$id('score-ring-fill');
+  if(fill){
+    fill.className='fill'+(pct<35?' danger':pct<60?' warning':'');
+    setTimeout(()=>{fill.style.strokeDashoffset=440-(pct/100*440)},200);
+  }
+  const sc=$id('score-center-text');
+  if(sc)sc.innerHTML=`<div class="big">${result.score}</div><div class="small">out of ${result.total}</div>`;
+  let grade,msg;
+  if(pct>=90){grade='A+';msg='Outstanding! Exceptional Performance 🌟'}
+  else if(pct>=75){grade='A';msg='Excellent! Keep it up! 🎉'}
+  else if(pct>=60){grade='B';msg='Good Performance! 👍'}
+  else if(pct>=45){grade='C';msg='Satisfactory. Revise once more! 📚'}
+  else if(pct>=35){grade='D';msg='Needs Improvement. Practice more! 📖'}
+  else{grade='F';msg='Better luck next time! Study hard! 💪'}
+  set('score-grade',grade);set('result-message',msg);
+  set('res-name-display',result.name);set('res-score',result.score+'/'+result.total);
+  set('res-correct',result.correct);set('res-wrong',result.wrong);
+  set('res-skipped',result.skipped);set('res-pct',pct+'%');set('res-time',result.timeTaken);
+  renderReview(result);renderCertificate(result,grade);renderLB();
+}
+
+// ─── REVIEW ───
+function renderReview(result){
+  const container=$id('review-container');if(!container)return;
+  const sections=[
+    {key:'A',label:'Section A — Source-Based',em:'🔵'},
+    {key:'B',label:'Section B — Case-Based',em:'🟣'},
+    {key:'C',label:'Section C — Assertion & Reasoning',em:'🟢'},
+    {key:'D',label:'Section D — Competency-Based',em:'🟠'},
+  ];
+  let html='',qNum=0,pR=new Set();
+  sections.forEach(sec=>{
+    const sQs=QUESTIONS.filter(q=>q.section===sec.key);
+    let ss=0,sm=0;sQs.forEach(q=>{sm+=q.marks;if(result.answers[q.id]===q.answer)ss+=q.marks});
+    html+=`<div class="section-review-title">${sec.em} ${sec.label}<span style="color:var(--primary);margin-left:auto">${ss}/${sm}</span></div>`;
+    sQs.forEach(q=>{
+      qNum++;
+      const ua=result.answers[q.id],ic=ua===q.answer,sk=ua===undefined;
+      if(q.passageId&&!pR.has(q.passageId+'_r')){
+        pR.add(q.passageId+'_r');
+        const pc=q.type==='case'?'case-passage':'';
+        html+=`<div class="passage-card ${pc}" style="font-size:13px">${q.passage}</div>`;
+      }
+      html+=`<div class="q-card" style="border-color:${sk?'var(--warning)':ic?'var(--success)':'var(--danger)'}">
+        <div class="q-header">
+          <div class="q-num" style="background:${sk?'var(--warning)':ic?'var(--success)':'var(--danger)'}">${sk?'—':ic?'✓':'✗'}</div>
+          <div class="q-text">Q${qNum}. ${q.question}</div>
+          <div class="q-marks">[${q.marks}M]</div>
+        </div>
+        <div class="options-grid">
+          ${q.options.map((opt,i)=>{
+            let cls='disabled';
+            if(i===q.answer)cls+=' correct';
+            else if(i===ua&&!sk)cls+=' wrong';
+            return`<button class="option-btn ${cls}"><div class="opt-letter">${'ABCD'[i]}</div><div class="opt-text">${opt}</div></button>`;
+          }).join('')}
+        </div>
+        <div class="explanation-box show"><strong>📖 Explanation: </strong>${q.explanation}</div>
+      </div>`;
+    });
+  });
+  container.innerHTML=html;
+}
+
+// ─── CERTIFICATE ───
+function renderCertificate(result,grade){
+  const el=$id('certificate');if(!el)return;
+  const date=new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
+  el.innerHTML=`
+    <div class="cert-school">DAV Public School</div>
+    <div class="cert-title">🎓 Certificate of Achievement</div>
+    <div class="cert-body">This is to certify that</div>
+    <div class="cert-name">${esc(result.name)}</div>
+    <div class="cert-body">has successfully completed the</div>
+    <div style="font-size:16px;font-weight:700;color:var(--primary);margin:8px 0">Class 8 Mathematics — Chapter 15: Mensuration</div>
+    <div class="cert-body">Online Competency-Based Assessment Test</div>
+    <div class="cert-details">
+      <div class="cert-detail"><div class="cd-val">${result.score}/${result.total}</div><div class="cd-lbl">Marks Obtained</div></div>
+      <div class="cert-detail"><div class="cd-val">${result.percentage}%</div><div class="cd-lbl">Percentage</div></div>
+      <div class="cert-detail"><div class="cd-val">${grade}</div><div class="cd-lbl">Grade</div></div>
+    </div>
+    <div class="cert-seal">🏅</div>
+    <div class="cert-footer">ID: ${esc(result.userId)} &nbsp;|&nbsp; Date: ${date} &nbsp;|&nbsp; Time: ${result.timeTaken}</div>
+    <div class="cert-footer" style="margin-top:8px;font-weight:700;color:var(--primary)">Developed by MRK</div>`;
+}
+
+function printCertificate(){
+  const el=$id('certificate');if(!el){toast('No certificate found!','error');return}
+  const w=window.open('','_blank','width=900,height=650');
+  w.document.write(`<!DOCTYPE html><html><head><title>Certificate — DAV Maths</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:'Nunito',sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#f0f4ff;margin:0;padding:24px;box-sizing:border-box}
+    .cw{background:#fff;padding:56px 80px;max-width:720px;width:100%;border:10px solid #E8F0FE;position:relative;text-align:center;box-shadow:0 16px 64px rgba(11,94,215,.2)}
+    .cw::before,.cw::after{content:'';display:block;height:8px;background:linear-gradient(90deg,#0B5ED7,#FF6B35,#0B5ED7)}
+    .cert-school{font-size:13px;font-weight:600;color:#475467;text-transform:uppercase;letter-spacing:2px}
+    .cert-title{font-size:34px;font-weight:900;font-family:'Poppins',sans-serif;color:#0B5ED7;margin:8px 0}
+    .cert-body{font-size:16px;color:#475467;margin:4px 0}
+    .cert-name{font-size:28px;font-weight:800;color:#101828;margin:16px 0;padding-bottom:12px;border-bottom:2px dashed #E4E7EC}
+    .cert-details{display:flex;justify-content:center;gap:56px;margin:20px 0;flex-wrap:wrap}
+    .cd-val{font-size:24px;font-weight:800;font-family:'Poppins',sans-serif;color:#0B5ED7}
+    .cd-lbl{font-size:13px;color:#475467}
+    .cert-seal{font-size:56px;margin:20px 0 12px}
+    .cert-footer{font-size:12px;color:#98A2B3;margin-top:6px}
+    @media print{body{background:#fff;padding:0}}
+  </style></head><body><div class="cw">${el.innerHTML}</div></body></html>`);
+  w.document.close();
+  setTimeout(()=>{w.focus();w.print()},600);
+}
+
+function downloadResult(){
+  const db=getDB();
+  const r=(db.results||[]).filter(x=>x.email===ST.student?.email).pop();
+  if(!r){toast('Result not found!','error');return}
+  const txt=`DAV CLASS 8 MATHEMATICS — CHAPTER 15: MENSURATION
+TEST RESULT REPORT
+============================================================
+Name         : ${r.name}
+Email        : ${r.email}
+User ID      : ${r.userId}
+Date & Time  : ${r.timestamp}
+Time Taken   : ${r.timeTaken}
+
+SCORE        : ${r.score} / ${r.total}
+PERCENTAGE   : ${r.percentage}%
+CORRECT      : ${r.correct}
+WRONG        : ${r.wrong}
+SKIPPED      : ${r.skipped}
+============================================================
+Developed by MRK | DAV Class 8 Maths — Chapter 15: Mensuration
+`;
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain'}));
+  a.download=`DAV_Result_${r.name.replace(/\s+/g,'_')}.txt`;
+  a.click();
+}
+
+// ─── ADMIN ───
+function loadAdminDashboard(){
+  const db=getDB(),R=db.results||[],A=db.analytics||{};
+  set('adm-visitors',A.visitors||0);
+  set('adm-participants',R.length);
+  set('adm-highest',R.length?Math.max(...R.map(r=>r.score)):0);
+  set('adm-avg',R.length?(R.reduce((s,r)=>s+r.score,0)/R.length).toFixed(1):'0');
+  const comp=R.filter(r=>r.completed).length;
+  set('adm-completion',R.length?Math.round(comp/R.length*100)+'%':'0%');
+  renderAdminTable(R);
+}
+
+function renderAdminTable(results){
+  const tbody=$id('admin-table-body');if(!tbody)return;
+  if(!results.length){tbody.innerHTML=`<tr><td colspan="7"><div class="empty-state"><div class="big">📋</div><p>No student data yet.</p></div></td></tr>`;return}
+  const sorted=[...results].sort((a,b)=>b.score-a.score);
+  tbody.innerHTML=sorted.map((r,i)=>{
+    const pct=Math.round(r.score/r.total*100);
+    const bc=pct>=60?'high':pct>=35?'mid':'low';
+    return`<tr>
+      <td>${i+1}</td>
+      <td><strong>${esc(r.name)}</strong></td>
+      <td>${esc(r.email)}</td>
+      <td><span class="score-badge ${bc}">${r.score}/${r.total} (${pct}%)</span></td>
+      <td>${r.timeTaken||'—'}</td>
+      <td style="font-size:12px">${r.timestamp||'—'}</td>
+      <td><button class="delete-btn" onclick="deleteEntry('${esc(r.email)}')">🗑 Delete</button></td>
+    </tr>`;
+  }).join('');
+}
+
+function filterTable(v){
+  v=v.toLowerCase();
+  document.querySelectorAll('#admin-table-body tr').forEach(row=>{row.style.display=row.textContent.toLowerCase().includes(v)?'':'none'});
+}
+
+function deleteEntry(email){
+  if(!confirm(`Delete record for ${email}?`))return;
+  const db=getDB();
+  db.results=(db.results||[]).filter(r=>r.email!==email);
+  saveDB(db);toast('Record deleted.','success');loadAdminDashboard();
+}
+
+function exportToExcel(){
+  const db=getDB(),R=db.results||[];
+  if(!R.length){toast('No data to export.','warning');return}
+  let csv='S.No,Name,Email,User ID,Score,Total,Percentage,Correct,Wrong,Skipped,Time Taken,Timestamp\n';
+  R.forEach((r,i)=>{csv+=`${i+1},"${r.name}","${r.email}","${r.userId}",${r.score},${r.total},${r.percentage}%,${r.correct},${r.wrong},${r.skipped},"${r.timeTaken}","${r.timestamp}"\n`});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));
+  a.download=`DAV_Maths_Results_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();toast('Exported!','success');
+}
+
+function resetLeaderboard(){
+  if(!confirm('Delete ALL student records permanently?'))return;
+  const db=getDB();db.results=[];saveDB(db);
+  toast('Leaderboard reset!','success');loadAdminDashboard();
+}
+
+function resetAnalytics(){
+  if(!confirm('Reset all analytics data?'))return;
+  const db=getDB();db.analytics={visitors:0};saveDB(db);
+  toast('Analytics reset!','success');loadAdminDashboard();
+}
+
+function switchTab(tabId,btn){
+  document.querySelectorAll('.tab-section').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  $id(tabId)?.classList.add('active');
+  btn.classList.add('active');
+  if(tabId==='tab-leaderboard')renderAdminLB();
+  if(tabId==='tab-analysis')renderAnalysis();
+}
+
+function renderAdminLB(){
+  const R=(getDB().results||[]).sort((a,b)=>b.score-a.score);
+  const c=$id('admin-lb-container');if(!c)return;
+  if(!R.length){c.innerHTML='<div class="empty-state"><div class="big">🏆</div><p>No participants yet.</p></div>';return}
+  const medals=['🥇','🥈','🥉'];
+  c.innerHTML=R.map((r,i)=>`
+    <div class="adm-lb-item">
+      <div style="font-size:22px;min-width:32px;text-align:center">${medals[i]||`<strong style="color:var(--primary)">${i+1}</strong>`}</div>
+      <div style="flex:1">
+        <div style="font-weight:700">${esc(r.name)}</div>
+        <div style="font-size:12px;color:var(--text-light)">${esc(r.email)} | ${r.timestamp}</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:800;font-size:18px;color:var(--primary);font-family:'Poppins',sans-serif">${r.score}/${r.total}</div>
+        <div style="font-size:12px;color:var(--text-light)">${r.percentage}% | ${r.timeTaken}</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderAnalysis(){
+  const R=getDB().results||[];
+  const c=$id('section-analysis-container');if(!c)return;
+  if(!R.length){c.innerHTML='<div class="empty-state"><div class="big">📊</div><p>No data yet.</p></div>';return}
+  const ranges=[
+    {l:'18–20 (Outstanding)',min:18,max:20,color:'var(--success)',cnt:0},
+    {l:'14–17 (Excellent)',min:14,max:17,color:'#22C55E',cnt:0},
+    {l:'10–13 (Good)',min:10,max:13,color:'var(--warning)',cnt:0},
+    {l:'6–9 (Average)',min:6,max:9,color:'var(--accent)',cnt:0},
+    {l:'0–5 (Needs Work)',min:0,max:5,color:'var(--danger)',cnt:0},
+  ];
+  R.forEach(r=>{const rg=ranges.find(x=>r.score>=x.min&&r.score<=x.max);if(rg)rg.cnt++});
+  const high=Math.max(...R.map(r=>r.score));
+  const low=Math.min(...R.map(r=>r.score));
+  const avg=(R.reduce((s,r)=>s+r.score,0)/R.length).toFixed(1);
+  c.innerHTML=`<h4 style="margin-bottom:16px;font-size:15px">Score Distribution — ${R.length} Student${R.length!==1?'s':''}</h4>
+  ${ranges.map(rg=>`<div class="section-score-row">
+    <div style="font-weight:600;min-width:160px">${rg.l}</div>
+    <div style="flex:1;margin:0 16px;background:var(--border);border-radius:99px;height:10px;overflow:hidden">
+      <div style="height:100%;border-radius:99px;background:${rg.color};width:${R.length?Math.round(rg.cnt/R.length*100):0}%;transition:width .6s ease"></div>
+    </div>
+    <div style="font-weight:700;color:${rg.color};min-width:40px;text-align:right">${rg.cnt}</div>
+    <div style="color:var(--text-light);font-size:12px;min-width:40px;text-align:right;margin-left:8px">${R.length?Math.round(rg.cnt/R.length*100):0}%</div>
+  </div>`).join('')}
+  <div style="margin-top:20px;padding:16px;background:var(--primary-light);border-radius:var(--radius-sm);text-align:center;font-size:14px;font-weight:600">
+    🏆 Highest: <strong>${high}/20</strong> &nbsp;|&nbsp; 📉 Lowest: <strong>${low}/20</strong> &nbsp;|&nbsp; 📊 Average: <strong>${avg}/20</strong>
+  </div>`;
+}
+
+// Expose globals
+window.selectAnswer=selectAnswer;
+window.submitTest=submitTest;
+window.downloadResult=downloadResult;
+window.printCertificate=printCertificate;
+window.deleteEntry=deleteEntry;
+window.exportToExcel=exportToExcel;
+window.resetLeaderboard=resetLeaderboard;
+window.resetAnalytics=resetAnalytics;
+window.switchTab=switchTab;
+window.filterTable=filterTable;
+window.closeAdminModal=closeAdminModal;
+window.loadAdminDashboard=loadAdminDashboard;
+</script>
+</body>
+</html>
